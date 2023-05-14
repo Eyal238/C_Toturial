@@ -1,9 +1,10 @@
+// כתבו תוכנית המגדירה מערך דו מימדי בגודל 10 על 10 מסוג מספרים שלמים, על התוכנית לבדוק האם האלכסון 
+// הראשי שווה לאלכסון המשני, על התוכנית להדפיס הודעה מתאימה.
+
 #include <stdio.h>
 const int R = 10;
 const int C = 10;
-// experience 3 
 
-// experience 11
 void diagonals(int mat[R][C])
 {
 	int count=0;
