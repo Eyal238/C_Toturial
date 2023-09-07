@@ -29,3 +29,19 @@ int main()
 	printf("The perimeter of the rectangle is %d:\n",p);
 	printf("The area of the rectangle is %d:",s); 
 }
+//3.
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	const float PI = 3.14159265359;
+	int r;
+	int p, s;
+	printf("Enter the raduis of the circle:");
+	scanf("%d",&r);
+	p = 2 * PI * r;
+	s =PI*pow(r, 2);
+	printf("The perimeter of the circle is %d:\n",p);
+	printf("The area of the circle is %d:",s); 
+}
