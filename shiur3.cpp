@@ -81,3 +81,23 @@ int main()
     printf("The maximum is: %d\n", max);
     printf("The minimum is: %d", min);
 }
+//5.
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int f5(int x, int y)
+{
+    int i = 0;
+    int multi=0; 
+    while (i < y)
+    {
+        multi = multi + x;
+        i++;
+    }
+    return multi;
+}
+int main()
+{
+    printf("The multi is: %d",f5(5,3));
+}
+//6.
+
