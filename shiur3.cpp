@@ -36,27 +36,28 @@ int main()
 #include <stdio.h>
 int main()
 {
-   int i=0, number;
-   int count=10000;
-   int ans=0;
-   printf("Enter your number:");
-   scanf("%d",&number);
-   printf("your number is %d\n",number);
-   while(number>10)
-   {
-       if((number/count)==(number%10))
-       {
-           ans=1;
-       }
-       else
-       {
-           ans=0;
-           break;
-       }
-       number=number%count;
-       number=number%10;
-       count=count/100;
-  }
-   printf( "The value is %d palindrom",ans);
+    int i = 0, number;
+    int count = 10000;
+    int ans;
+    printf("Enter your number:");
+    scanf("%d", &number);
+    while (number > 10)
+    {
+        if ((number / count) == (number % 10))
+        {
+            ans = 1;
+        }
+        else
+        {
+            ans = 0;
+            break;
+        }
+        number = number % count;
+        number = number % 10;
+        count = count / 100;
+    }
+    if (ans == 1)
+        printf("The value is palindrom!");
+    else
+        printf("The value is not palindrom!");
 }
-
