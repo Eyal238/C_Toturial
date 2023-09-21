@@ -61,3 +61,23 @@ int main()
     else
         printf("The value is not palindrom!");
 }
+//4
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main()
+{
+    int i = 0, num;
+    int max = 0, min = 2147483647;
+    while (i < 3)
+    {
+        printf("Enter  number %d:", i+1);
+        scanf("%d", &num);
+        if (num > max)
+             max = num;
+        if (num < min)
+             min = num;
+        i++;
+    }
+    printf("The maximum is: %d\n", max);
+    printf("The minimum is: %d", min);
+}
