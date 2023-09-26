@@ -10,13 +10,7 @@ void f1(int x,int y)
     }
     printf("%d", pow);
 }
-int main()
-{
-    f1(5,2);
-}
 //2.
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
 void f2(int x)
 {
     int i;
@@ -37,7 +31,4 @@ void f2(int x)
     else
         printf("false");
 }
-int main()
-{
-    f2(12);
-}
+
