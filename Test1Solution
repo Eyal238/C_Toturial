@@ -1,1 +1,13 @@
-
+//1.
+void dis(int t1,int t2,int v1,int v2)
+{
+	int x1, x2,deltaX;
+	float deltaXKm;
+	x1 = t1*v1;
+	x2 = t1*v2;
+	printf("%d\n", x1);
+	printf("%d\n", x2);
+	deltaX = abs(x2 - x1);
+	deltaXKm =(float)deltaX/1000;
+	printf("%0.3f",deltaXKm);
+}
