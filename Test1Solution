@@ -63,3 +63,23 @@ void f2(int num1,int num2)
 		printf("No number is a palindrome");
 
 }
+//3.
+void f3(int arr1[8])
+{
+	int i = 0,max1=arr1[0],max2=arr1[0],temp;
+	for (i = 0; i < 8; i++)
+	{
+		if (arr1[i] > max2)
+		    max2 = arr1[i];
+		if (max2 > max1)
+		{
+			temp = max2;
+			max2 = max1;
+			max1 = temp;
+		}
+			
+	}
+	printf("max1=%d\n", max1);
+	printf("max2=%d\n", max2);
+	printf("%d", max1 + max2);
+}
