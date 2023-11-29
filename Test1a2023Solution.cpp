@@ -83,3 +83,29 @@ void f3(int arr1[8])
 	printf("max2=%d\n", max2);
 	printf("%d", max1 + max2);
 }
+//4. 
+void f4(int arr1[])
+{
+	int i,n=3,sum=0;
+	for (i = 0; i < 4; i++)
+	{
+		if (arr1[i] > 0)
+			arr1[i] = 1;
+		else
+			arr1[i] = 0;
+	}
+	for (i = 0; i < 4; i++)
+		printf("%d", arr1[i]);
+	printf("\n");
+	for (i = 0; i < 4; i++)
+	{
+		if (arr1[i] == 1)
+		{
+			arr1[i] = pow(2, n);
+			sum = sum + arr1[i];
+		}
+		n--;
+	}
+	printf("%d",sum);
+}
+
