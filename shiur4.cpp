@@ -32,3 +32,26 @@ void f2(int x)
         printf("false");
 }
 
+//9. כתוב פונקציה המקבלת גובה של משולש שווה שוקיים. הפונקציה תדפיס משולש כוכביות על פי 
+//    הגובה שהתקבל לפונקציה
+void f9(int height)
+{
+	int i, j;
+	int fix = height - 1;
+	int	base = height + fix;
+	int	x1 = base/2;
+	int	x2 = x1;
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < base; j++)
+		{
+			if ((j >= x1) and (j <= x2))
+				printf("*");
+			else
+				printf(" ");
+		}
+		x1 = x1 - 1;
+		x2 = x2 + 1;
+		printf("\n");
+	}
+}
