@@ -1,6 +1,6 @@
-//1.
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+//1.
 void f1(int x,int y)
 {
     int i,pow=1;
@@ -31,7 +31,6 @@ void f2(int x)
     else
         printf("false");
 }
-
 //9. כתוב פונקציה המקבלת גובה של משולש שווה שוקיים. הפונקציה תדפיס משולש כוכביות על פי 
 //    הגובה שהתקבל לפונקציה
 void f9(int height)
