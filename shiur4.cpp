@@ -37,9 +37,9 @@ void f9(int height)
 {
 	int i, j;
 	int fix = height - 1;
-	int	base = height + fix;
-	int	x1 = base/2;
-	int	x2 = x1;
+	intb base = height + fix;
+	int  x1 = base/2;
+	int  x2 = x1;
 	for (i = 0; i < height; i++)
 	{
 		for (j = 0; j < base; j++)
