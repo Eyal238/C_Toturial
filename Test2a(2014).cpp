@@ -20,5 +20,25 @@ void f1(int arr1[])
     for(i=0;i<10;i++)
         printf("%d ",arr1[i]);
 }
-// כתוב פונקציה המקבלת מספר שלם כלשהו, הפונקציה תדפיס את מספר הספרות שלו ותחזיר תשובה בוליאנית האם הוא המספר פלינדרום
-
+//2. כתוב פונקציה המקבלת מספר שלם כלשהו, הפונקציה תדפיס את מספר הספרות שלו ותחזיר תשובה בוליאנית האם הוא המספר פלינדרום
+int f2(int num)
+{
+    int count=0,divide=1,temp=num;
+    while(temp>0)
+    {
+        temp=temp/10;
+        count++;
+        divide*=10;
+    }
+    printf("%d\n",count);
+    divide/=10;
+    while(num>0)
+    {
+        if(num%10!=num/divide)
+            return 0;
+        num=num%divide;
+        num=num/10;
+        divide/=100;
+    }
+    return 1;
+}
