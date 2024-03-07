@@ -69,7 +69,7 @@ int f4(int arr1[3][3])
 {
     int i,j;
     int arr2[3];
-    int sum=0;
+    int sum=0,index;
     for(i=0;i<3;i++)
     {
         for(j=0;j<3;j++)
@@ -80,7 +80,12 @@ int f4(int arr1[3][3])
         sum=0;
     }
     for(i=0;i<3;i++)
-        if(arr2[i]>sum)
-            sum=arr2[i];
-    printf("%d",sum);
+    {
+        if (arr2[i] > sum) {
+            sum = arr2[i];
+            index = i;
+        }
+    }
+
+    printf("%d",index+1);
 }
