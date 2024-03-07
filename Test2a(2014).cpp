@@ -42,3 +42,24 @@ int f2(int num)
     }
     return 1;
 }
+//3. 
+int f3(int speed,int id)
+{
+    int maxSpeed;
+    printf("Enter max speed:");
+    scanf("%d",&maxSpeed);
+    if((id%5==0)||(id%10==0))
+    {
+        if(speed>maxSpeed+40)
+            return 1;
+        else
+            return 0;
+    }
+    else
+    {
+        if(speed>maxSpeed+20)
+            return 1;
+        else
+            return 0;
+    }
+}
