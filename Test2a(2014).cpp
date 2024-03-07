@@ -64,3 +64,23 @@ int f3(int speed,int id)
             return 0;
     }
 }
+// 4. כתוב פונקציה המקבלת מטריצה 3 על 3 של שלמים , הפונקציה תדפיס את מספר השורה בה סכום המספרים הגדול ביותר
+int f4(int arr1[3][3])
+{
+    int i,j;
+    int arr2[3];
+    int sum=0;
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            sum=sum+arr1[i][j];
+        }
+        arr2[i]=sum;
+        sum=0;
+    }
+    for(i=0;i<3;i++)
+        if(arr2[i]>sum)
+            sum=arr2[i];
+    printf("%d",sum);
+}
